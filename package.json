@@ -1,0 +1,69 @@
+{
+  "name": "react-flags",
+  "version": "0.1.0",
+  "description": "World's flags with React",
+  "repository": {
+    "type": "git",
+    "url": "wiredmax/react-flags"
+  },
+  "scripts": {
+    "build": "gulp lib",
+    "dist": "gulp dist-build",
+    "lint": "eslint src"
+  },
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib/"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+    "lib",
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "ecosystem-react",
+    "react-component",
+    "flags",
+    "flag"
+  ],
+  "author": "Maxime Poulin <mpoulin@roux.ca>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=0.13"
+  },
+  "devDependencies": {
+    "babel-core": "^5.4.0",
+    "babel-eslint": "^3.1.14",
+    "babel-loader": "^5.0.0",
+    "babel-plugin-object-assign": "^1.1.0",
+    "chance": "^0.7.1",
+    "css-loader": "^0.7.1",
+    "del": "^1.1.1",
+    "eslint": "^0.22.1",
+    "eslint-plugin-react": "^2.5.0",
+    "extract-text-webpack-plugin": "^0.3.8",
+    "file-loader": "^0.8.1",
+    "gulp": "^3.6.2",
+    "gulp-babel-helpers": "^2.1.0",
+    "gulp-header": "^1.0.2",
+    "gulp-plumber": "^0.6.3",
+    "gulp-rename": "^1.2.0",
+    "imports-loader": "^0.6.3",
+    "jq-release": "*",
+    "json-loader": "^0.5.1",
+    "marked": "^0.3.3",
+    "merge-stream": "^0.1.7",
+    "multiline": "^1.0.2",
+    "raw-loader": "^0.5.1",
+    "react": "^0.13.1",
+    "react-hot-loader": "^1.2.0",
+    "scriptjs": "^2.5.7",
+    "style-loader": "^0.7.0",
+    "url-loader": "^0.5.5",
+    "webpack": "^1.7.0",
+    "webpack-dev-server": "^1.7.0"
+  }
+}
