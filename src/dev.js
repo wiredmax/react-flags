@@ -1,5 +1,4 @@
-import React from "react";
-const {PropTypes} = React;
+import React, {PropTypes} from "react";
 import Flag from "./Flag.js";
 
 const App = React.createClass({
@@ -12,8 +11,10 @@ const App = React.createClass({
       <div>
         <Flag
           name="CA"
-          size="ico"
+          format="png"
+          pngSize={64}
           shiny={true}
+          alt="Canada Flag"
         />
       </div>
     );

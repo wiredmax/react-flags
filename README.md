@@ -12,22 +12,38 @@ Flags of the world react component
 
 The iso code of the country's flag.
 
-#### `size`: PropTypes.string (default: "32")
+#### `format`: PropTypes.string (default: 32)
 
-Size of the flag.
-
-Possible values are:
-  - `16`: 16 pixels square png file.
-  - `24`: 24 pixels square png file.
-  - `32`: 32 pixels square png file.
-  - `48`: 48 pixels square png file.
-  - `64`: 64 pixels square png file.
+  - `png`: square png file.
   - `icns`: square icns file.
   - `ico`: square ico file.
+
+#### `pngSize`: PropTypes.number (default: 32)
+
+Size of the flag if we are using the PNG format.
+
+Possible values are:
+  - `16`: 16 pixels
+  - `24`: 24 pixels
+  - `32`: 32 pixels
+  - `48`: 48 pixels
+  - `64`: 64 pixels
 
 #### `shiny`: PropTypes.bool (default: `false`)
 
 Display a shiny of flat flag. Default is a flat flag.
+
+#### `width`: PropTypes.number (default: null)
+
+Width of the flag <img> HTML tag.
+
+#### `height`: PropTypes.number (default: null)
+
+Height of the flag <img> HTML tag.
+
+#### `alt`: PropTypes.string (default: `this.props.name`)
+
+Alternative text of the flag <img> HTML tag.
 
 ## Installation
 
