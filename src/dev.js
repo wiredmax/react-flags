@@ -1,4 +1,4 @@
-import React, {PropTypes} from "react";
+import React from "react";
 import Flag from "./Flag.js";
 
 const App = React.createClass({

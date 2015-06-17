@@ -1,1 +1,1 @@
-{"version":3,"sources":["../src/index.js"],"names":[],"mappings":";;;;;;;;qBAAiB,QAAQ;;;;QAAlB,IAAI","file":"index.js","sourcesContent":["export Flag from \"./Flag\";"]}
+{"version":3,"sources":["../src/index.js"],"names":[],"mappings":";;;;;;;;;qBACiB,QAAQ;;;;;;QAAlB,IAAI","file":"index.js","sourcesContent":["/*eslint-disable */\nexport Flag from \"./Flag\";\n/*eslint-enable */\n"]}

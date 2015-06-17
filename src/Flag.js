@@ -1,5 +1,4 @@
 import React, {PropTypes} from "react";
-import Flag from "./Flag.js";
 import availableFlags from "./flags.json5";
 
 export default React.createClass({
@@ -8,10 +7,17 @@ export default React.createClass({
    */
 
   propTypes: {
+    // Alternative text of the flag <img> HTML tag.
+    alt: PropTypes.string,
+
+    // File format of the flag.
+    format: PropTypes.oneOf(["png", "icns", "ico"]),
+
+    // Height of the flag <img> HTML tag.
+    height: PropTypes.number,
+
     // Name of country or region for this flag.
     name: PropTypes.string,
-
-    format: PropTypes.oneOf(["png", "icns", "ico"]),
 
     // Size of the country flag
     pngSize: PropTypes.oneOf([16, 24, 32, 48, 64]),
@@ -21,12 +27,6 @@ export default React.createClass({
 
     // Width of the flag <img> HTML tag.
     width: PropTypes.number,
-
-    // Height of the flag <img> HTML tag.
-    height: PropTypes.number,
-
-    // Alternative text of the flag <img> HTML tag.
-    alt: PropTypes.string,
   },
 
   /**
@@ -62,8 +62,10 @@ export default React.createClass({
   render() {
     const type = this.props.shiny ? "shiny" : "flat";
 
-    const folder = (this.props.format === "icns" || this.props.format === "ico") ?
-      this.props.format : this.props.pngSize;
+    const folder = (
+      this.props.format === "icns" ||
+      this.props.format === "ico"
+    ) ? this.props.format : this.props.pngSize;
 
     const altText = this.props.alt ? this.props.alt : this.props.name;
 
