@@ -10,7 +10,11 @@ const App = React.createClass({
   render() {
     return (
       <div>
-        <Flag />
+        <Flag
+          name="CA"
+          size="ico"
+          shiny={true}
+        />
       </div>
     );
   }
