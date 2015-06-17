@@ -1,5 +1,6 @@
 import React, {PropTypes} from "react";
 import Flag from "./Flag.js";
+import availableFlags from "./flags.json5";
 
 export default React.createClass({
   /**
@@ -66,6 +67,12 @@ export default React.createClass({
 
     const altText = this.props.alt ? this.props.alt : this.props.name;
 
+    const name = this.props.name.charAt(0) === "_" ?
+      this.props.name : this.props.name.toUpperCase();
+
+    const flag = ~availableFlags.flags.indexOf(name) ?
+      name : "_unknown";
+
     return (
       <img
         alt={altText}
@@ -75,7 +82,7 @@ export default React.createClass({
           "/" +
           folder +
           "/" +
-          this.props.name +
+          flag +
           "." +
           this.props.format
         }

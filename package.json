@@ -7,8 +7,8 @@
     "url": "wiredmax/react-flags"
   },
   "scripts": {
-    "build": "rm -rf ./lib ./dev && babel -sd lib/ src/ && webpack",
-    "start": "webpack-dev-server",
+    "build": "rm -rf ./lib ./dev && babel -sd lib/ src/ && webpack --production",
+    "start": "webpack-dev-server --development",
     "lint": "eslint ./src ./*.js",
     "test": "npm run lint"
   },
@@ -36,13 +36,15 @@
     "react": ">=0.13.0"
   },
   "devDependencies": {
-    "lodash": "^3.9.3",
     "babel": "^5.5.6",
     "babel-loader": "^5.1.4",
     "eslint": "^0.22.1",
     "eslint-loader": "^0.12.0",
     "eslint-plugin-react": "^2.5.0",
     "html-webpack-plugin": "^1.5.0",
+    "json-loader": "^0.5.2",
+    "json5-loader": "^0.6.0",
+    "lodash": "^3.9.3",
     "node-libs-browser": "^0.5.2",
     "react-hot-loader": "^1.2.7",
     "webpack": "^1.9.10",

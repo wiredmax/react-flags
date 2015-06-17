@@ -26,7 +26,12 @@ module.exports = {
       {
         test: /\.js$/, loaders: ["react-hot", "babel"],
         include: [path.join(__dirname, "src")]
-      }
+      },
+      // Images.
+      {test: /\.(png|ico|icns)$/, loader: "url?limit=8192"},
+      // JSON files (Mostly used for languages).
+      {test: /\.json$/, loader: "json"},
+      {test: /\.json5$/, loader: "json5"},
     ]
   },
 

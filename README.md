@@ -8,9 +8,27 @@ Flags of the world react component
 
 ## Options
 
-#### `name`: PropTypes.string (default: "_unknown")
+#### `name`: PropTypes.string (default: `_unknown`)
 
-The iso code of the country's flag.
+The ISO 3166-1 alpha-2 of the country's flag or one of the following:
+  - `_abkhazia`
+  - `_basque-country`
+  - `_british-antarctic-territory`
+  - `_commonwealth`
+  - `_england`
+  - `_kosovo`
+  - `_mars`
+  - `_nagorno-karabakh`
+  - `_nato`
+  - `_northern-cyprus`
+  - `_olympics`
+  - `_red-cross`
+  - `_scotland`
+  - `_somaliland`
+  - `_south-ossetia`
+  - `_united-nations`
+  - `_unknown`
+  - `_wales`
 
 #### `format`: PropTypes.string (default: 32)
 
