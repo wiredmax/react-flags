@@ -44,13 +44,8 @@
     "eslint-loader": "^0.14.0",
     "eslint-plugin-react": "^2.5.0",
     "eslint-plugin-shadow-exception": "^1.1.1",
-    "html-webpack-plugin": "^1.5.0",
     "json-loader": "^0.5.2",
     "json5-loader": "^0.6.0",
-    "lodash": "^3.9.3",
-    "node-libs-browser": "^0.5.2",
-    "react-hot-loader": "^1.2.7",
-    "webpack": "^1.9.10",
-    "webpack-dev-server": "^1.9.0"
+    "webpack": "^1.9.10"
   }
 }
