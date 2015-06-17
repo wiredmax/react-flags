@@ -67,8 +67,10 @@ const App = React.createClass({
       <div>
         <Flag
           name="CA"
-          size="ico"
+          format="png"
+          pngSize={64}
           shiny={true}
+          alt="Canada Flag"
         />
       </div>
     );
