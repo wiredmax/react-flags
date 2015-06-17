@@ -76,5 +76,4 @@ See the [change log](https://github.com/wiredmax/react-flags/blob/master/CHANGEL
 [GoSquared](https://www.gosquared.com) - [2600 Flag Icon Set](https://www.gosquared.com/resources/flag-icons/)
 
 ## License
-MIT
-See [LICENSE](https://github.com/wiredmax/react-flags/blob/master/LICENSE).
+MIT (See [LICENSE](https://github.com/wiredmax/react-flags/blob/master/LICENSE))
