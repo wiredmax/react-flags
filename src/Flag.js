@@ -37,7 +37,7 @@ export default React.createClass({
 
   return (
     <span>
-      <img src="" />
+      Flag!
     </span>
   );
 
