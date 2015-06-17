@@ -76,10 +76,6 @@ const {PropTypes} = React;
 import Flag from "./Flag.js";
 
 const App = React.createClass({
-  getInitialState() {
-    return {};
-  },
-
   render() {
     return (
       <div>
