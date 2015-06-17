@@ -63,6 +63,10 @@ Height of the flag <img> HTML tag.
 
 Alternative text of the flag <img> HTML tag.
 
+#### `basePath`: PropTypes.string (default: `/img/flags`)
+
+The base path of where the flags files from the vendor folder are in your project.
+
 ## Installation
 
 ```bash
