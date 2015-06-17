@@ -1,7 +1,7 @@
 {
   "name": "react-flags",
   "version": "0.1.0",
-  "description": "World's flags with React",
+  "description": "Flags of the world",
   "repository": {
     "type": "git",
     "url": "wiredmax/react-flags"
