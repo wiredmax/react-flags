@@ -1,9 +1,13 @@
 # Versions
 
+## v0.1.3 - (2015/06/17)
+
+* Changed the build system from babel-cli to babel via webpack.
+
 ## v0.1.2 - (2015/06/17)
 
-* ESLint integration
-* Support both lower and uppercase ISO 3166-1 alpha-2
+* ESLint integration.
+* Support both lower and uppercase ISO 3166-1 alpha-2.
 
 ## v0.1.1 - (2015/06/17)
 

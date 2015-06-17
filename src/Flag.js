@@ -10,6 +10,9 @@ export default React.createClass({
     // Alternative text of the flag <img> HTML tag.
     alt: PropTypes.string,
 
+    // Base path to the content of /vendor
+    basePath: PropTypes.string,
+
     // File format of the flag.
     format: PropTypes.oneOf(["png", "icns", "ico"]),
 
@@ -19,10 +22,10 @@ export default React.createClass({
     // Name of country or region for this flag.
     name: PropTypes.string,
 
-    // Size of the country flag
+    // Size of the PNG country flag
     pngSize: PropTypes.oneOf([16, 24, 32, 48, 64]),
 
-    // Size of the country flag
+    // Shiny or Flat
     shiny: PropTypes.bool,
 
     // Width of the flag <img> HTML tag.
@@ -35,16 +38,14 @@ export default React.createClass({
 
   getDefaultProps() {
     return {
-      // Default flag.
+      basePath: "/img/flags",
+
       name: "_unknown",
 
-      // Default format in PNG.
       format: "png",
 
-      // Default size of 32 pixels.
       pngSize: 32,
 
-      // Shiny flags (Default is flat)
       shiny: false,
 
       width: null,
@@ -79,7 +80,7 @@ export default React.createClass({
       <img
         alt={altText}
         src={
-          "../vendor/flags/flags-iso/" +
+          this.props.basePath + "/flags-iso/" +
           type +
           "/" +
           folder +

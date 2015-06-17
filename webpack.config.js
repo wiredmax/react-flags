@@ -1,25 +1,17 @@
 var webpack = require("webpack");
-var HtmlWebpackPlugin = require("html-webpack-plugin");
 var path = require("path");
 
 module.exports = {
-  devtool: "eval",
-
   entry: [
-    "./src/dev.js",
-    "webpack-dev-server/client?http://localhost:8080",
-    "webpack/hot/only-dev-server"
+    path.resolve("./src/Flag.js")
   ],
 
   output: {
-    filename: "index.js",
-    path: path.resolve("./dev")
+    filename: "react-flags.js",
+    path: path.resolve("./lib"),
+    library: "react-flags",
+    libraryTarget: "umd"
   },
-
-  plugins: [
-    new HtmlWebpackPlugin(),
-    new webpack.HotModuleReplacementPlugin()
-  ],
 
   module: {
     loaders: [
@@ -41,5 +33,16 @@ module.exports = {
 
   stats: {
     colors: true
-  }
+  },
+
+  externals: [
+    {
+      'react': {
+        root: 'React',
+        commonjs2: 'react',
+        commonjs: 'react',
+        amd: 'react'
+      }
+    }
+  ]
 };

@@ -68,6 +68,7 @@ Alternative text of the flag <img> HTML tag.
 ```bash
 npm install --save react-flags
 ```
+You need to copy the content of the `vendor` folder to your local project. The default base path is `/img/flags`
 
 ## Usage
 ```js
