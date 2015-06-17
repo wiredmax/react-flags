@@ -2,6 +2,10 @@
 
 Flags of the world react component
 
+[![Dependency Status][deps-badge]][deps]
+[![devDependency Status][dev-deps-badge]][dev-deps]
+[![peerDependency Status][peer-deps-badge]][peer-deps]
+
 ## Options
 
 #### `name`: PropTypes.string (default: "_unknown")
@@ -77,3 +81,12 @@ See the [change log](https://github.com/wiredmax/react-flags/blob/master/CHANGEL
 
 ## License
 MIT (See [LICENSE](https://github.com/wiredmax/react-flags/blob/master/LICENSE))
+
+[deps-badge]: https://david-dm.org/wiredmax/react-flags.svg
+[deps]: https://david-dm.org/wiredmax/react-flags
+
+[dev-deps-badge]: https://david-dm.org/wiredmax/react-flags/dev-status.svg
+[dev-deps]: https://david-dm.org/wiredmax/react-flags#info=devDependencies
+
+[peer-deps-badge]: https://david-dm.org/wiredmax/react-flags/peer-status.svg
+[peer-deps]: https://david-dm.org/wiredmax/react-flags#info=peerDependencies
