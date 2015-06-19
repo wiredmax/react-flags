@@ -1,5 +1,9 @@
 # Versions
 
+## v0.1.4 - (2015/06/19)
+
+* Changed name prop for country.
+
 ## v0.1.3 - (2015/06/17)
 
 * Changed the build system from babel-cli to babel via webpack.

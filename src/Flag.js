@@ -13,13 +13,16 @@ export default React.createClass({
     // Base path to the content of /vendor
     basePath: PropTypes.string,
 
+    // Country or region for this flag. (Legacy)
+    country: PropTypes.string,
+
     // File format of the flag.
     format: PropTypes.oneOf(["png", "icns", "ico"]),
 
     // Height of the flag <img> HTML tag.
     height: PropTypes.number,
 
-    // Name of country or region for this flag.
+    // Name of country or region for this flag. (Legacy)
     name: PropTypes.string,
 
     // Size of the PNG country flag
@@ -40,7 +43,9 @@ export default React.createClass({
     return {
       basePath: "/img/flags",
 
-      name: "_unknown",
+      country: "_unknown",
+
+      name: null,
 
       format: "png",
 
@@ -61,6 +66,8 @@ export default React.createClass({
    */
 
   render() {
+    const country = this.props.name ? this.props.name : this.props.country;
+
     const type = this.props.shiny ? "shiny" : "flat";
 
     const folder = (
@@ -68,13 +75,13 @@ export default React.createClass({
       this.props.format === "ico"
     ) ? this.props.format : this.props.pngSize;
 
-    const altText = this.props.alt ? this.props.alt : this.props.name;
+    const altText = this.props.alt ? this.props.alt : country;
 
-    const name = this.props.name.charAt(0) === "_" ?
-      this.props.name : this.props.name.toUpperCase();
+    const file = country.charAt(0) === "_" ?
+      country : country.toUpperCase();
 
-    const flag = ~availableFlags.flags.indexOf(name) ?
-      name : "_unknown";
+    const flag = ~availableFlags.flags.indexOf(file) ?
+      file : "_unknown";
 
     return (
       <img

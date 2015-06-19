@@ -8,7 +8,7 @@ Flags of the world react component
 
 ## Options
 
-#### `name`: PropTypes.string (default: `_unknown`)
+#### `country`: PropTypes.string (default: `_unknown`)
 
 The ISO 3166-1 alpha-2 of the country's flag or one of the following:
   - `_abkhazia`
@@ -77,7 +77,6 @@ You need to copy the content of the `vendor` folder to your local project. The d
 ## Usage
 ```js
 import React from "react";
-const {PropTypes} = React;
 import Flag from "./Flag.js";
 
 const App = React.createClass({
