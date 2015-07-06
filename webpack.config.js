@@ -1,4 +1,4 @@
-var webpack = require("webpack");
+require("webpack");
 var path = require("path");
 
 module.exports = {
@@ -37,11 +37,11 @@ module.exports = {
 
   externals: [
     {
-      'react': {
-        root: 'React',
-        commonjs2: 'react',
-        commonjs: 'react',
-        amd: 'react'
+      "react": {
+        root: "React",
+        commonjs2: "react",
+        commonjs: "react",
+        amd: "react"
       }
     }
   ]

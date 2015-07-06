@@ -10,7 +10,7 @@ Flags of the world react component
 
 #### `country`: PropTypes.string (default: `_unknown`)
 
-The ISO 3166-1 alpha-2 of the country's flag or one of the following:
+The ISO 3166-1 alpha-2 or alpha-3 of the country's flag or one of the following:
   - `_abkhazia`
   - `_basque-country`
   - `_british-antarctic-territory`
@@ -84,7 +84,7 @@ const App = React.createClass({
     return (
       <div>
         <Flag
-          name="CA"
+          name="CAN"
           format="png"
           pngSize={64}
           shiny={true}
@@ -99,7 +99,6 @@ React.render(<App />, document.body);
 
 ```
 
-
 ## Development and testing
 
 ```bash
@@ -109,11 +108,14 @@ npm start
 
 Then work on the `Flag.jsx` component in `src`.
 
-## Change logs
+## Change log
 See the [change log](https://github.com/wiredmax/react-flags/blob/master/CHANGELOG.md).
 
 ## Sources
 [GoSquared](https://www.gosquared.com) - [2600 Flag Icon Set](https://www.gosquared.com/resources/flag-icons/)
+
+## Author
+Maxime Poulin <mpoulin@roux.ca>
 
 ## License
 MIT (See [LICENSE](https://github.com/wiredmax/react-flags/blob/master/LICENSE))

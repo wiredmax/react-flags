@@ -1,5 +1,7 @@
 import React, {PropTypes} from "react";
 import availableFlags from "./flags.json5";
+import find from "lodash/collection/find";
+import countries from "!filter-loader?cca2,cca3!world-countries/countries.json";
 
 export default React.createClass({
   /**
@@ -61,12 +63,21 @@ export default React.createClass({
     };
   },
 
+  // Get information about a country using the alpha-3 ISO code.
+  cca3To2(cca3) {
+    return find(countries, {"cca3": cca3}).cca2 || "_unknown";
+  },
+
   /**
    * React render
    */
 
   render() {
-    const country = this.props.name ? this.props.name : this.props.country;
+    let country = this.props.name ? this.props.name : this.props.country;
+
+    country = this.props.name.length === 3 ?
+      this.cca3To2(this.props.name)
+    : country;
 
     const type = this.props.shiny ? "shiny" : "flat";
 

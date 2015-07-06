@@ -1,5 +1,9 @@
 # Versions
 
+## v0.1.5 - (2015/07/06)
+
+* Support for ISO 3166-1 alpha-3.
+
 ## v0.1.4 - (2015/06/19)
 
 * Changed name prop for country.
