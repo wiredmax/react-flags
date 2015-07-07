@@ -1,5 +1,9 @@
 # Versions
 
+## v0.1.6 - (2015/07/06)
+
+* Bug fix with country code type check when the old name prop was used instead of the country prop.
+
 ## v0.1.5 - (2015/07/06)
 
 * Support for ISO 3166-1 alpha-3.

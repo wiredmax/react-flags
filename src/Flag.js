@@ -75,8 +75,8 @@ export default React.createClass({
   render() {
     let country = this.props.name ? this.props.name : this.props.country;
 
-    country = this.props.name.length === 3 ?
-      this.cca3To2(this.props.name)
+    country = country.length === 3 ?
+      this.cca3To2(country)
     : country;
 
     const type = this.props.shiny ? "shiny" : "flat";
