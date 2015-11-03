@@ -1,5 +1,9 @@
 # Versions
 
+## v0.1.7 - (2015/11/03)
+
+* Now allowing React 0.14 versions as peer dependencies.
+
 ## v0.1.6 - (2015/07/06)
 
 * Bug fix with country code type check when the old name prop was used instead of the country prop.
