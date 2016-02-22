@@ -65,7 +65,8 @@ export default React.createClass({
 
   // Get information about a country using the alpha-3 ISO code.
   cca3To2(cca3) {
-    return find(countries, {"cca3": cca3}).cca2 || "_unknown";
+    let country = find(countries, {"cca3": cca3});
+    return country ? country.cca2 : "_unknown";
   },
 
   /**
