@@ -77,7 +77,7 @@ You need to copy the content of the `vendor` folder to your local project. The d
 ## Usage
 ```js
 import React from "react";
-import Flag from "./Flag.js";
+import Flag from "react-flags";
 
 const App = React.createClass({
   render() {
