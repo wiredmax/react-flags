@@ -1,5 +1,10 @@
 # Versions
 
+## v0.1.9 - (2016/06/29)
+
+* Now allowing React 15.1 as a peer dependency.
+
+
 ## v0.1.8 - (2016/02/22)
 
 * Fixed issue for when an incorrect CCA3 was provided.
