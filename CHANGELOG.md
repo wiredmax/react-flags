@@ -1,5 +1,10 @@
 # Versions
 
+## v0.1.11 - (2016/07/13)
+
+* Now allowing React 15.x as a peer dependency.
+
+
 ## v0.1.10 - (2016/06/29)
 
 * Fixed issue with last publish.
