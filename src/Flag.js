@@ -54,6 +54,7 @@ class Flag extends React.Component {
           '.' +
           this.props.format
         }
+        className={this.props.className}
         width={this.props.width}
         height={this.props.height}
       />
@@ -76,6 +77,9 @@ Flag.propTypes = {
 
   // Height of the flag <img> HTML tag.
   height: PropTypes.number,
+
+  // Image className
+  className: PropTypes.string,
 
   // Name of country or region for this flag. (Legacy)
   name: PropTypes.string,
@@ -103,6 +107,8 @@ Flag.defaultProps = () => {
     pngSize: 32,
 
     shiny: false,
+
+    className: '',
 
     width: null,
 
