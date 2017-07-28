@@ -12,28 +12,6 @@ class Flag extends React.Component {
    * React lifecycle
    */
 
-  getDefaultProps() {
-    return {
-      basePath: '/img/flags',
-
-      country: '_unknown',
-
-      name: null,
-
-      format: 'png',
-
-      pngSize: 32,
-
-      shiny: false,
-
-      width: null,
-
-      height: null,
-
-      alt: null
-    };
-  }
-
   // Get information about a country using the alpha-3 ISO code.
   cca3To2(cca3) {
     let country = find(countries, { cca3: cca3 });
@@ -110,6 +88,28 @@ Flag.propTypes = {
 
   // Width of the flag <img> HTML tag.
   width: PropTypes.number
+};
+
+Flag.defaultProps = () => {
+  return {
+    basePath: '/img/flags',
+
+    country: '_unknown',
+
+    name: null,
+
+    format: 'png',
+
+    pngSize: 32,
+
+    shiny: false,
+
+    width: null,
+
+    height: null,
+
+    alt: null
+  };
 };
 
 export default Flag;
