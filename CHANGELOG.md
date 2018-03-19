@@ -1,23 +1,24 @@
 # Versions
 
+## v0.1.13 - (2018/03/19)
+
+* Now allowing React 16 as a peer dependency.
+
 ## v0.1.12 - (2016/10/20)
 
-* Added flag pointers to: AG, IC, LT, NF, SC and TV 
+* Added flag pointers to: AG, IC, LT, NF, SC and TV
 
 ## v0.1.11 - (2016/07/13)
 
 * Now allowing React 15.x as a peer dependency.
 
-
 ## v0.1.10 - (2016/06/29)
 
 * Fixed issue with last publish.
 
-
 ## v0.1.9 - (2016/06/29)
 
 * Now allowing React 15.1 as a peer dependency.
-
 
 ## v0.1.8 - (2016/02/22)
 
