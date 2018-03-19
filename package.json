@@ -50,5 +50,8 @@
     "lodash": "^3.10.0",
     "webpack": "^1.9.10",
     "world-countries": "^1.7.3"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.10"
   }
 }
