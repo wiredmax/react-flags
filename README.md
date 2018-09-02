@@ -35,6 +35,7 @@ The ISO 3166-1 alpha-2 or alpha-3 of the country's flag or one of the following:
   - `png`: square png file.
   - `icns`: square icns file.
   - `ico`: square ico file.
+  - `svg`: normal sized flag SVG file.
 
 #### `pngSize`: PropTypes.number (default: 32)
 
