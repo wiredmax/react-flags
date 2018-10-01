@@ -115,6 +115,7 @@ See the [change log](https://github.com/wiredmax/react-flags/blob/master/CHANGEL
 ## Sources
 - [GoSquared](https://www.gosquared.com) - [2600 Flag Icon Set](https://www.gosquared.com/resources/flag-icons/)
 - [flag-icon-css](http://flag-icon-css.lip.is/) - SVG flags icons
+
 ## Author
 Maxime Poulin <mpoulin@roux.ca>
 
