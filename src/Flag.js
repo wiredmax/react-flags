@@ -30,7 +30,7 @@ class Flag extends React.Component {
     const type = this.props.shiny ? 'shiny' : 'flat';
 
     const folder =
-      this.props.format === 'icns' || this.props.format === 'ico'
+      this.props.format === 'icns' || this.props.format === 'ico' || this.props.format === 'svg'
         ? this.props.format
         : this.props.pngSize;
 
@@ -73,7 +73,7 @@ Flag.propTypes = {
   country: PropTypes.string,
 
   // File format of the flag.
-  format: PropTypes.oneOf(['png', 'icns', 'ico']),
+  format: PropTypes.oneOf(['png', 'icns', 'ico', 'svg']),
 
   // Height of the flag <img> HTML tag.
   height: PropTypes.number,
