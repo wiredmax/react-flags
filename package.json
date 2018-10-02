@@ -47,7 +47,7 @@
     "filter-loader": "^1.0.1",
     "json-loader": "^0.5.2",
     "json5-loader": "^0.6.0",
-    "lodash": "^3.10.0",
+    "lodash": "^4.17.5",
     "webpack": "^1.9.10",
     "world-countries": "^1.7.3"
   },

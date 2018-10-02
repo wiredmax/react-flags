@@ -1,5 +1,13 @@
 # Versions
 
+## v0.1.15 - (2018/10/02)
+
+* Updated lodash to v4.
+
+## v0.1.14 - (2018/10/01)
+
+* Added SVG flags.
+
 ## v0.1.13 - (2018/03/19)
 
 * Now allowing React 16 as a peer dependency.

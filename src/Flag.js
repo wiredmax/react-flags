@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import availableFlags from './flags.json5';
-import find from 'lodash/collection/find';
+import find from 'lodash/find';
 import countries from '!filter-loader?cca2,cca3!world-countries/countries.json';
 class Flag extends React.Component {
   /**
