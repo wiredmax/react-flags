@@ -49,6 +49,7 @@
     "json5-loader": "^0.6.0",
     "lodash": "^4.17.5",
     "webpack": "^1.9.10",
+    "webpack-dev-server": "^1.16.5",
     "world-countries": "^1.7.3"
   },
   "dependencies": {
