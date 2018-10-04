@@ -1,5 +1,11 @@
 # Versions
 
+## v0.1.16 - (2018/10/04)
+
+* Added webpack-dev-server as devDependency
+* Added SVG for the unknown flag.
+
+
 ## v0.1.15 - (2018/10/02)
 
 * Updated lodash to v4.
