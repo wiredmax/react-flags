@@ -1,5 +1,10 @@
 # Versions
 
+## v0.1.17 - (2018/10/19)
+
+* Changed `_unknown.svg` flag to fit proportions
+
+
 ## v0.1.16 - (2018/10/04)
 
 * Added webpack-dev-server as devDependency
