@@ -1,8 +1,8 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 import availableFlags from './flags.json5';
-import find from 'lodash/find';
 import countries from '!filter-loader?cca2,cca3!world-countries/countries.json';
+import find from 'lodash/find';
 class Flag extends React.Component {
   /**
    * React properties
@@ -43,6 +43,7 @@ class Flag extends React.Component {
     return (
       <img
         alt={altText}
+        title={this.props.title}
         src={
           this.props.basePath +
           '/flags-iso/' +
@@ -89,6 +90,9 @@ Flag.propTypes = {
 
   // Shiny or Flat
   shiny: PropTypes.bool,
+  
+  // Title attribute for the flag <img> HTML tag
+  title: PropTypes.string,
 
   // Width of the flag <img> HTML tag.
   width: PropTypes.number
@@ -114,7 +118,9 @@ Flag.defaultProps = () => {
 
     height: null,
 
-    alt: null
+    alt: null,
+
+    title: null
   };
 };
 
