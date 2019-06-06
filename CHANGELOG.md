@@ -1,5 +1,10 @@
 # Versions
 
+## v0.1.18 - (2019/06/06)
+
+* Added support for title attribute to img tag.
+
+
 ## v0.1.17 - (2018/10/19)
 
 * Changed `_unknown.svg` flag to fit proportions
