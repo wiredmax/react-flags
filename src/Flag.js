@@ -98,30 +98,28 @@ Flag.propTypes = {
   width: PropTypes.number
 };
 
-Flag.defaultProps = () => {
-  return {
-    basePath: '/img/flags',
+Flag.defaultProps = {
+	basePath: '/img/flags',
 
-    country: '_unknown',
+	country: '_unknown',
 
-    name: null,
+	name: null,
 
-    format: 'png',
+	format: 'png',
 
-    pngSize: 32,
+	pngSize: 32,
 
-    shiny: false,
+	shiny: false,
 
-    className: '',
+	className: '',
 
-    width: null,
+	width: null,
 
-    height: null,
+	height: null,
 
-    alt: null,
+	alt: null,
 
-    title: null
-  };
+	title: null
 };
 
 export default Flag;
